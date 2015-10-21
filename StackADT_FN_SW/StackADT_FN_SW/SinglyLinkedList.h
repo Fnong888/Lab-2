@@ -10,15 +10,17 @@ template <class ItemType>
 class SinglyLinkedList
 {
 private:
+	Node<ItemType> *headPtr;
 	int itemCount;
 
 public:
-	SinglyLinkedList();
+	SinglyLinkedList();				{ headPtr = 0; itemCount = 0; }
 	SinglyLinkedList(const SinglyLinkedList<ItemType> &newList);
 	~SinglyLinkedList();		//Destructor should use emptyList function
 
 	bool isEmpty() const;			//Checks if list is empty
-	void add();			
+	void addFirst();
+	void addLast();
 	void remove();		
 	ItemType find(const ItemType &targetItem);			//Searches for requested item in list
 	int size() const;			//Checks the # of items in list

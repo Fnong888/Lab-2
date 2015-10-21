@@ -66,6 +66,9 @@
     <ClInclude Include="Node.h" />
     <ClInclude Include="SinglyLinkedList.h" />
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SinglyLinkedList.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
