@@ -6,7 +6,6 @@
 using namespace std;
 
 template <class ItemType>
-
 class SinglyLinkedList
 {
 private:
@@ -14,17 +13,16 @@ private:
 	int itemCount;
 
 public:
-	SinglyLinkedList();				{ headPtr = 0; itemCount = 0; }
+	SinglyLinkedList()				{ headPtr = 0; itemCount = 0; }
 	SinglyLinkedList(const SinglyLinkedList<ItemType> &newList);
-	~SinglyLinkedList();		//Destructor should use emptyList function
+	~SinglyLinkedList();								//Destructor should use emptyList function
 
-	bool isEmpty() const;			//Checks if list is empty
-	void addFirst();
-	void addLast();
-	void remove();		
-	ItemType find(const ItemType &targetItem);			//Searches for requested item in list
-	int size() const;			//Checks the # of items in list
-	void emptyList();			//Clears out the entire list
+	bool isEmpty() const;								//Checks if list is empty
+	void add(const ItemType &tem);
+	void remove(const ItemType &item);
+	bool find(const ItemType &targetItem);			//Searches for requested item in list
+	int size() const;									//Checks the # of items in list
+	void emptyList();									//Clears out the entire list
 };
 
 #endif

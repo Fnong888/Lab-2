@@ -62,11 +62,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="ListInterface.h" />
+    <ClInclude Include="StackInterface.h" />
     <ClInclude Include="Node.h" />
     <ClInclude Include="SinglyLinkedList.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp" />
     <ClCompile Include="SinglyLinkedList.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
